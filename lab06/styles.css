@@ -4,7 +4,7 @@ h1, h2 {
     text-decoration: underline;
 }
 h1{
-    font-face: 2em
+    font-size: 2em;
 }
 .evenrow{
     color: lightpink;
