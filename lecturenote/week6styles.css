@@ -1,0 +1,20 @@
+        /* below we have a group selector */
+        p, ul {
+            color:plum;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        }
+        /* descendent selector only give color green to the link inside the paragraph */
+        p a {
+            color: green;
+        }
+        #firstparagraph {
+            color: lightsalmon;
+        }
+        .pretty{
+            color: aquamarine;
+        }
+        /* only change amazon link underline to none underline */
+        a{
+            text-decoration: none;
+        }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 6 CSS Intro</title>
+    <!-- This is an embedded style sheet -->
+    <style>
+        /* below we have a group selector */
+        p, ul {
+            color:plum;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        }
+        /* descendent selector only give color green to the link inside the paragraph */
+        p a {
+            color: green;
+        }
+        #firstparagraph {
+            color: lightsalmon;
+        }
+        .pretty{
+            color: aquamarine;
+        }
+        /* only change amazon link underline to none underline */
+        a{
+            text-decoration: none;
+        }
+    </style> 
+</head>
+<body>
+    <a href="http://www.amazon.com">Amazon</a>
+    <!-- id values must be unique -->
+    <p id="firstparagraph">
+        Lorem ipsum dolor sit <a href="http://www.google.com">Google</a> amet consectetur adipisicing elit. Quae quibusdam libero officia ex alias repellat ducimus ea placeat vero accusantium, tempora voluptatum minima excepturi hic ipsa eum praesentium quisquam aliquid!
+    </p>
+    <ul>
+        <li>purple</li>
+        <li class="pretty">blue</li>
+    </ul>
+    <p>I'm excited of the Holloeen</p>
+    <!-- class values is not unique-->
+    <p class="pretty">I'm going to be pretty</p>
+</body>
+</html>
