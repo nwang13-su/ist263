@@ -1,0 +1,19 @@
+body {
+    color: #533E85;
+    background-color: #EFFFFD;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover {
+    color: #3dfc03;
+}
+
+a:visited {
+    color: #ff00f2;
+}
+h1{
+    font-size: 2em;
+}
+.evenrow{
+    background-color: lightpink;
+}
