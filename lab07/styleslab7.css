@@ -1,11 +1,16 @@
 body {
     color: #533E85;
-    background-color: #EFFFFD;
+    background-color: #FAEEE7;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+a:link {
+    color: #FF6363;
+  }
 a:hover {
     color: #3dfc03;
+}
+a:nav {
+    color: #F7FF93;
 }
 
 a:visited {
