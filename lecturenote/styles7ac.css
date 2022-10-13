@@ -1,0 +1,10 @@
+body {
+    background-image: url("../images/logo_-syracuse-university-orange-smiling-teeth-otto-the-orange.png");
+    background-repeat:repeat;
+}
+
+p {
+    background-color: #e37ab4;
+    border: 5px solid #af453e;
+    padding: 15px;
+}

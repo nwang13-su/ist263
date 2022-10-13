@@ -1,0 +1,22 @@
+a:hover {
+    color: #3dfc03;
+}
+
+a:visited {
+    color: #ff00f2;
+}
+
+body {
+    background-color: #000000;
+
+}
+p {
+    background-image: url("../images/genshinimpact-blogrol.jpeg");
+    background-repeat:inherit;
+}
+
+.second {
+    border: 2px solid #ff6ce4;
+    margin: 20px;
+    padding: 10px;
+}
