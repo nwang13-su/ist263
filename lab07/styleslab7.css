@@ -1,23 +1,31 @@
 body {
-    color: #533E85;
+    color: #06113C;
     background-color: #FAEEE7;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
 a:link {
     color: #FF6363;
   }
 a:hover {
-    color: #3dfc03;
+    color: #FDD7AA;
+}
+nav {
+    padding: 10px;
+    margin-bottom: 30px;
 }
 nav a {
-    color: #F7FF93;
+    color: #9772FB;
 }
+nav a:hover {background-color: #B9F8D3;}
 
-a:visited {
-    color: #ff00f2;
-}
-h1{
+
+h1 {
     font-size: 2em;
+}
+h1,h2 {
+    color: #4D77FF;
 }
 .evenrow{
     background-color: lightpink;
