@@ -3,7 +3,10 @@ body {
     background-color: #FAEEE7;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+nav a {
+    color: #9772FB;
+}
+nav a:hover {background-color: #B9F8D3;}
 
 a:link {
     color: #FF6363;
@@ -15,10 +18,7 @@ nav {
     padding: 10px;
     margin-bottom: 30px;
 }
-nav a {
-    color: #9772FB;
-}
-nav a:hover {background-color: #B9F8D3;}
+
 
 
 h1 {
