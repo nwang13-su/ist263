@@ -5,7 +5,7 @@ body {
 }
 nav a {
     color: #9772FB;
-    display: block;
+
 }
 nav a:hover {background-color: #B9F8D3;}
 
@@ -32,7 +32,7 @@ h1,h2 {
 @media only screen and (max-width: 768px) {
                 
     span {display:none;}
-    nav a {width: 100%; margin-bottom: 5px;}
+    nav a {width: 100%; margin-bottom: 5px; display: block;}
     
 }
 @media only screen and (min-width: 768px) {
