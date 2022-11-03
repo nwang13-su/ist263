@@ -5,6 +5,7 @@ body {
 }
 nav a {
     color: #9772FB;
+    display: block;
 }
 nav a:hover {background-color: #B9F8D3;}
 
@@ -19,8 +20,6 @@ nav {
     margin-bottom: 30px;
 }
 
-
-
 h1 {
     font-size: 2em;
 }
@@ -29,4 +28,14 @@ h1,h2 {
 }
 .evenrow{
     background-color: lightpink;
+}
+@media only screen and (max-width: 768px) {
+                
+    span {display:none;}
+    nav a {width: 100%; margin-bottom: 5px;}
+    
+}
+@media only screen and (min-width: 768px) {
+
+    .small {display: none;}
 }
