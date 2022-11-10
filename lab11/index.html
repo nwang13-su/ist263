@@ -17,6 +17,17 @@
             body {
                 margin: 20px;
             }
+            #skip {
+            background-color: rgb(246, 177, 143);
+            border: 1px bold black;
+            padding: 2px;
+            position: absolute; /* out of page flow for layout */
+            left: -999px;
+            }
+            #skip:focus {
+            left: 10px;
+            top: 40px;
+            }
 
         </style>
         <title>Naiyou's Bio</title>
@@ -28,6 +39,8 @@
                 <a href="index.html">Home</a> <span>|</span> 
                 <a href="skills.html">Skills</a> <span>|</span> 
                 <a href="contact.html">Contact</a>
+                <a id="skip" href="#content">Skip to Content</a><br> <!-- # sign in href means goes somewhere to the same page (bookmark ^^^link) -->
+
             </nav>
 
             <h1 class="bio">Naiyou's Bio</h1>
@@ -55,7 +68,7 @@
             </main>
             <footer>        
 <hr>
-            <p>&copy;2020<span class="motto">"It doesn't matter how slow you go, as long as you don't stop."</span></p>
+            <p id="content">&copy;2020<span class="motto">"It doesn't matter how slow you go, as long as you don't stop."</span></p>
 
             
             </footer>

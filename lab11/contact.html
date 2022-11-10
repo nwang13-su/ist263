@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .one, .two {
+                display: flex;
+                background-color: #f1fff5; border-radius: 1em;
+            }
+            .two {
+                margin-top: 40px;
+                flex-wrap: wrap;
+            }
+            .info1, .info2 {
+                margin: 10px;
+            }
+            .info1 {
+                padding: 20px;
+            }
+            .info2 {
+                padding-top: 120px;
+            }
+            .img {
+                width: 15%;
+            }
+            .map, .form {
+                margin: 20px;
+            }
+            .map {
+                padding: 15px;
+                flex: 1;
+            }
+            .form {
+                padding-top: 100px;
+                padding-left: 10px;
+                flex: 1;
+            }
+            body {
+                margin: 20px;
+            }
+            #skip1 {
+            background-color: rgb(246, 177, 143);
+            border: 1px bold black;
+            padding: 2px;
+            position: absolute; /* out of page flow for layout */
+            left: -999px;
+            }
+            #skip1:focus {
+            left: 10px;
+            top: 40px;
+            }
+        </style>
+        <title>Contact</title>
+        <link rel="stylesheet" href="styleslab7.css">
+        </head>
+
+        <body>
+            <nav>
+                <a href="index.html">Home</a> <span>|</span>
+                <a href="skills.html">Skills</a> <span>|</span>
+                <a href="contact.html">Contact</a>
+                <a id="skip1" href="#yourmap">Skip to Content</a><br> <!-- # sign in href means goes somewhere to the same page (bookmark ^^^link) -->
+
+            </nav>
+            <h1>Contact</h1>
+        <div class="one">
+            <div class="info1">    
+                <h2> Address </h2>
+                <br>
+                <br>
+                <p> Name: Naiyou Wang </p>
+
+
+                <p> Address: 113 Comstock Pl.</p> 
+            </div>
+            <div class="info2">
+                <p><a href="mailto:nwang13@syr.edu">Naiyou Wang's Email</a> </p> 
+                
+                <p><img class="img" src="../images/logo-sized.png" alt="LinkeIn Logo">My LinkedIn Profile: <a href="https://www.linkedin.com/in/nwang-9a2599149/">Naiyou Wang LinkedIn
+                    </a></p>
+            </div>    
+        </div>
+
+        <div class="two">
+                
+            <div class="form">
+                <form action="https://formspree.io/f/xnqrdqre" method="post">
+                    <label for="contactinfo">Enter your contact information:</label>
+                    <input type="text" id="contactinfo" name="contactinfo"><br>
+
+                    <p>Do you want me send email of my portfolio?</p>
+                    <input type="radio" id="emailyes" name="emailornot" value="yes" checked>
+                    <label for="emailyes">yes</label>
+                    <input type="radio" id="emailno" name="emailornot" value="no">
+                    <label for="emailno">no</label><br>
+
+                    <label for="feedback">Please give me some feedback on the page:</label>
+                    <textarea id="feedback" name="feedback"></textarea><br>
+
+                    <br>
+                    <input type="submit" value="submit the form">
+                </form>
+            </div>
+                <iframe id="yourmap" class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11663.043450969559!2d-76.14695632706136!3d43.046462755373796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f309ba6f5791%3A0x7086a4dca845cdc2!2s113%20Comstock%20Pl%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1663250396672!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+                
+        </div>
+</body>
+</html>
