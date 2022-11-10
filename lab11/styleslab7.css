@@ -10,10 +10,10 @@ nav a {
 nav a:hover {background-color: #B9F8D3;}
 
 a {
-    color: #FF6363;
+    color: #3f038d;
   }
 a:hover {
-    color: #FDD7AA;
+    color: #89ebff;
 }
 nav {
     padding: 10px;
@@ -24,7 +24,7 @@ h1 {
     font-size: 2em;
 }
 h1,h2 {
-    color: #4D77FF;
+    color: #2354f7;
 }
 .evenrow{
     background-color: lightpink;
