@@ -1,10 +1,10 @@
 body {
     color: #06113C;
-    background-color: #FAEEE7;
+    background-color: #faf8e7;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 nav a {
-    color: #9772FB;
+    color: #5115f5;
 
 }
 nav a:hover {background-color: #B9F8D3;}
