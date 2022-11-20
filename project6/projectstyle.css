@@ -10,7 +10,7 @@ nav a {
 nav a:hover {
     color: #e32929;
   }
-nav input[type=text] {
+nav input[type=text], .searchtab {
     float: right;
     padding: 8px;
     border: none;
