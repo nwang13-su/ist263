@@ -6,27 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultra Game World</title>
     <style>
-        nav {
-
-            padding: 15px;
-            margin: 15px;
-            border: 2px solid black;
-            border-radius: 1em;
-        }
-        body {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        .navlink1, .navlink2, .navlink3 {
+            margin-right: 10px;
+            margin-left: 10px;
         }
         header {
             display: flex;
             justify-content: center;
-            padding: 20px;
-            margin: 20px;
-            background-color: aquamarine;
-
+            padding: 60px;
+            background-color: #FAD4D4;
         }
         .headertext {
-            margin-top: 120px;
-            margin: 20px;
+            margin: auto;
             padding: 15px;
             padding-right: 40px;
             flex-basis: 45%;
@@ -34,15 +25,93 @@
         .banner {
             max-width: 90%;
             flex-basis: 60%;
-
-            margin:auto;
+            margin: auto;
             border-radius: 1em;
         }
+        .bannerimg {
+            text-align: center;
+            margin: auto;
+        }
+        .intro {
+            padding: 120px;            
+            margin:auto;
+            text-align: center;
+        }
+        .headline {
+            text-align: center;
+        }
+        .category {
+            display: flex;
+        
+        }
+        .content {
+            padding: 40px;
+            margin: auto;
+        }
+        .btn {
+            border: 2px solid #594545;
+            border-radius: 5px;
+            background-color: #FFEBCC ;
+            padding: 8px;
+            margin: auto;    width: 30%;
+        }
+        .lolhome, .crhome, .wdhome {
+            padding: 20px;
+            margin: auto;
+        }
+        .pubghome, .zeldahome {
+            padding-left: 40px;
+            padding-right: 40px;
+            margin: auto;
+        }
+        
         img {
             max-width: 100%;
         }
-        @media only screen and (maxwith: 600px) {
-            header {flex-wrap: wrap;}
+
+        #skip {
+            background-color: #e49d9d;
+            border: 1px bold black;
+            padding: 6px;
+            position: absolute; /* out of page flow for layout */
+            left: -999px;
+            }
+        #skip:focus {
+            left: 10px;
+            top: 60px;
+            }
+
+
+        @media only screen and (max-width: 800px) {
+        header {flex-wrap: wrap;}
+        .headertext {
+            flex-basis: 85%;
+        }
+        .lolhome, .crhome, .wdhome {flex-basis: 75%;}
+        .pubghome, .zeldahome {flex-basis: 75%;}
+        .category {
+            flex-wrap: wrap;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding-bottom: 80px;
+        }
+        .content {flex: 1;}
+        }
+
+        @media only screen and (min-width: 801px) {
+        header {flex-wrap: nowrap;}
+        .headertext {
+            flex-basis: 45%;
+        }
+        .lolhome, .crhome, .wdhome {flex-basis: 34%;}
+        .pubghome, .zeldahome {flex-basis: 26%;}
+        .category {
+            flex-wrap: nowrap;
+            margin-left: 80px;
+            margin-right: 80px;
+            padding-bottom: 120px;
+        }
+        .content {flex-basis: 50%;}
         }
         
     </style>
@@ -52,10 +121,11 @@
 <body>
 
     <nav>
-        <a href="index.html">Home</a> <span>|</span>
-        <a href="mobilegame.html">Mobile Games</a> <span>|</span>
-        <a href="aboutus.html">About Us</a>
-        <input type="text" placeholder="Search..">
+        <a class="navlink1" href="index.html" tabindex="1">Home</a> <span>|</span>
+        <a class="navlink2" href="mobilegame.html" tabindex="2"> Mobile Games</a> <span>|</span>
+        <a class="navlink3" href="aboutus.html" tabindex="3"> About Us</a>
+        <input class="searchbar" type="text" placeholder="Search.." tabindex="4">
+        <a id="skip" href="#content" tabindex="5">Skip to Content</a><br>
     </nav>
 
     <header>
@@ -64,72 +134,84 @@
             <p>Welcome to the ultra-game world! Our website gives an insight of all types of games and reliable rating systems for you to choose the game that attracts you the most. We're also here for people who don't know video games but want to learn and explore the game world. You can find all different categories of video games. So, why don't we start now?</p>
 
         </div>
-        <div>
+        <div class="bannerimg" > 
             <img class="banner" src="../project/images/genshinimpact-homepage.jpeg" alt="genshin impact 3.0">
         </div>
 
     </header>
+    <div class="intro">
+        <p>Let's begin by walking you through the definition of video games. Video games usually refer to the game that plays on the digital screen, including TV, computer, mobile phone or any other types of digital screens. Since the involvement of various sizes and functions of screen, the variation of video games increases tremendously. The general devices used to play video games include PCs (personal computers), laptops, tablets, TV sets, monitors, and virtual reality headsets. </p><br>
 
+        <p>See? Isn't it so interesting to get to know all the games? Don't you feel that you are in a different world already? Let's get more excited into learning some of the games under these categories.</p><br><br>
 
-
-
-
-
-    <h2>Category by Devices:</h2>
-    <div>
-        <h3>PC Games</h3> 
-        <p>PC games are the games played on personal computers(PCs). Many games are available for individuals to play on their PCs. The commeen PC games include: League of Legends, Minecraft, Destiny 2, God of War, Grand Theft Auto V, Eldon Ring, Fortnite.</p>
-        <input type="submit" value="Learn More"><br><br>
+        
     </div>
-    <div>
-        <img src="../project/images/League-of-Legends-2022-homepage.jpeg" alt="league of legends 2022">
-        <img src="../project/images/Minecraft-homepage.jpeg" alt="minecraft">
-    </div>
-
-    <div>
-        <img src="../project/images/pubg-homepage.png" alt="player's unknown battleground">
-    </div>
-    <div>
-        <h3>Mobile Games</h3> 
-        <p>Can you believe that there are around 478 thousand of mobile games available on google play store? Many people feature the mobile games because of its flexibility, convenience, and afforability. Some popupar mobile games are Call of Duty: Mobile, Among Us, Genshin Impact, Hearthstone, Clash of Clans, Pokemon GO, PUBG Mobile, Clash Royale.</p>
-        <input type="submit" value="Learn More"><br><br>        
+    
+    <h2 class="headline" >Category by Devices</h2><br>
+    <div class="category">
+            
+        <div class="content">
+            <h3>PC Games</h3> 
+            <p>PC games are the games played on personal computers(PCs). Many games are available for individuals to play on their PCs. The commeen PC games include: League of Legends, Minecraft, Destiny 2, God of War, Grand Theft Auto V, Eldon Ring, Fortnite.</p>
+            <input class="btn" type="submit" value="Learn More"><br><br>
+        </div>
+        <div class="lolhome">
+            <img src="../project/images/League-of-Legends-2022-homepage.jpeg" alt="league of legends 2022">
+        </div>
     </div>
 
-    <div>
-        <h3>Web Games</h3> 
-        <p>Some people feel that downloading a game is troublesome and taking many spaces so they prefer web games. Web games are games played through the internet by using the web browser. If you have your laptop, tablet, or PCs, you can quickly try any web game you are interested! Some web games include: A Dark Room, Heroes of Might and Magic Online, GeoGuessr, Isleward, Powerline.io.</p>
-        <input type="submit" value="Learn More"><br><br>
-    </div>
-    <div>
-        <img src="../project/images/destiny-2-homepage.jpeg" alt="destiny2">        
-    </div>
-
-    <div>
-    <img src="../project/images/zelda-breath-of-the-wild-homepage.jpeg" alt="legend of zelda">
-    </div>
-    <div>
-        <h3>Console Games</h3> 
-        <p>Console games are a type of game that use controllers such as analogue joysticks. The image and sound of the games are usually displayed on a TV or similar devices. Console games take up a huge market place in current days. Some console games are: ATetris, Overwatch, Red Dead Redemption 2, The Legend of Zelda.</p>
-        <input type="submit" value="Learn More"><br><br>        
+    
+    <div class="category">
+        <div class="pubghome">
+            <img src="../project/images/pubg-homepage.png" alt="player's unknown battleground">
+        </div>
+        <div class="content">
+            <h3>Mobile Games</h3> 
+            <p>Can you believe that there are around 478 thousand of mobile games available on google play store? Many people feature the mobile games because of its flexibility, convenience, and afforability. Some popupar mobile games are Call of Duty: Mobile, Among Us, Genshin Impact, Hearthstone, Clash of Clans, Pokemon GO, PUBG Mobile, Clash Royale.</p>
+            <input class="btn" type="submit" value="Learn More"><br><br>        
+        </div>
     </div>
 
-    <div>
-        <h3>VR Games</h3> 
-        <p>VR games stand for virtual reality games. It is a type of game using VR devices. Examples of VR games include: Beat Saber, Superhot VR, The Elder Scrolls V, The Walking Dead: Saints & Sinners.</p>
-        <input type="submit" value="Learn More"><br><br>
-    </div>
-    <div>
-        <img src="../project/images/walking-dead-homepage.jpeg" alt="walking dead">        
+    <div class="category">
+        <div class="content">
+            <h3>Web Games</h3> 
+            <p>Some people feel that downloading a game is troublesome and taking many spaces so they prefer web games. Web games are games played through the internet by using the web browser. If you have your laptop, tablet, or PCs, you can quickly try any web game you are interested! Some web games include: A Dark Room, Heroes of Might and Magic Online, GeoGuessr, Isleward, Powerline.io.</p>
+            <input class="btn" type="submit" value="Learn More"><br><br>
+        </div>
+        <div class="crhome">
+            <img src="../project/images/og_clashroyale.jpg" alt="clash royale game">
+        </div>
     </div>
 
+    <div class="category">
+        <div class="zeldahome">
+            <img src="../project/images/zelda-breath-of-the-wild-homepage.jpeg" alt="legend of zelda">
+        </div>
+        <div class="content">
+            <h3>Console Games</h3> 
+            <p>Console games are a type of game that use controllers such as analogue joysticks. The image and sound of the games are usually displayed on a TV or similar devices. Console games take up a huge market place in current days. Some console games are: ATetris, Overwatch, Red Dead Redemption 2, The Legend of Zelda.</p>
+            <input class="btn" type="submit" value="Learn More"><br><br>        
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="content">
+            <h3>VR Games</h3> 
+            <p>VR games stand for virtual reality games. It is a type of game using VR devices. Examples of VR games include: Beat Saber, Superhot VR, The Elder Scrolls V, The Walking Dead: Saints & Sinners.</p>
+            <input class="btn" type="submit" value="Learn More"><br><br>
+        </div>
+        <div class="wdhome">
+            <img src="../project/images/walking-dead-homepage.jpeg" alt="walking dead">        
+        </div>
+    </div>
 
 
 
     <footer>
         <div class="row1">
-            <div class="links">
+            <div class="link1">
                 <p>
-                    <strong>Company</strong><br>
+                    <strong>Company</strong><br><br>
                     About Us<br>
                     Locations<br>
                     Careers<br>
@@ -142,9 +224,9 @@
                 <p>Contact us: ultragame@gamil.com</p>
             </div> 
 
-            <div class="links">
+            <div class="link2">
                 <p>
-                    <strong>Contact</strong><br>
+                    <h3>Contact</h3>
                     Purchase<br>
                     Support Teams<br>
                     Community<br>
@@ -155,15 +237,15 @@
         
         <div class="row2">
 
-                Follow us on<a class="facebook" href="https://www.facebook.com/" id="footer-social-facebook"><img src="../project/footer/square-facebook.svg" alt="facebook logo"> </a>
+                Follow us on: <a class="facebook" href="https://www.facebook.com/" id="footer-social-facebook"><img class="footerimg" src="../project/footer/square-facebook.svg" alt="facebook logo"></a>
 
-                <img src="../project/footer/square-twitter.svg" alt="twitter logo"> <a class="twitter" href="https://www.twitter.com/" id="footer-social-twitter"></a>
+                <img class="footerimg" src="../project/footer/square-twitter.svg" alt="twitter logo"> <a class="twitter" href="https://www.twitter.com/" id="footer-social-twitter"></a>
 
-                <img src="../project/footer/square-instagram.svg" alt="instagram logo"> <a class="twitter" href="https://www.instagram.com/" id="footer-social-instagram"></a>
+                <img class="footerimg" src="../project/footer/square-instagram.svg" alt="instagram logo"> <a class="twitter" href="https://www.instagram.com/" id="footer-social-instagram"></a>
 
-                <img src="../project/footer/square-youtube.svg" alt="youtube logo"> <a class="twitter" href="https://www.youtube.com/" id="footer-social-youtube"></a>
+                <img class="footerimg" src="../project/footer/square-youtube.svg" alt="youtube logo"> <a class="twitter" href="https://www.youtube.com/" id="footer-social-youtube"></a>
 
-                <img src="../project/footer/linkedin.svg" alt="linkedin logo"> <a class="twitter" href="https://www.linkedin.com/" id="footer-social-linkedin"></a>
+                <img class="footerimg" src="../project/footer/linkedin.svg" alt="linkedin logo"> <a class="twitter" href="https://www.linkedin.com/" id="footer-social-linkedin"></a>
 
         </div>
         <div class="row3">
