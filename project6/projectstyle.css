@@ -7,13 +7,18 @@ nav a {
     font-weight: 600;
     font-size: large;
 }
-.searchbar {
-    border: 2px solid #EF9F9F;
-    border-radius: 1em;
-    margin:auto;
-    padding: 6px;
-    width: 20%;    
-}
+
+nav input[type=text] {
+    float: right;
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #191919;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size:medium;
+  }
 
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
@@ -58,10 +63,4 @@ footer {
 @media only screen and (max-width: 800px) {
     span {display: none;}
     nav a {width: 100%; margin-bottom: 16px; display: block;}
-    .searchbar {
-        width: 200px;
-        margin-top: 24px;
-        display: block;
-        
-    }
 }
