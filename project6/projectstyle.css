@@ -7,7 +7,9 @@ nav a {
     font-weight: 600;
     font-size: large;
 }
-
+nav a:hover {
+    color: #e32929;
+  }
 nav input[type=text] {
     float: right;
     padding: 8px;
