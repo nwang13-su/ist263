@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .motto {
+                float: right;
+            }
+            .banner,.bio {
+                text-align: center;
+            }
+            .me {
+                max-width: 100%;
+            }
+            body {
+                margin: 20px;
+            }
+            #skip {
+            background-color: rgb(246, 177, 143);
+            border: 1px bold black;
+            padding: 2px;
+            position: absolute; /* out of page flow for layout */
+            left: -999px;
+            }
+            #skip:focus {
+            left: 10px;
+            top: 40px;
+            }
+
+        </style>
+        <title>Naiyou's Bio</title>
+        <link rel="stylesheet" href="styleslab7.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;600&display=swap" rel="stylesheet">
+        </head>
+
+        <body>
+            <nav>
+                <a href="index.html">Home</a> <span>|</span> 
+                <a href="skills.html">Skills</a> <span>|</span> 
+                <a href="contact.html">Contact</a>
+                <a id="skip" href="#content">Skip to Content</a><br> <!-- # sign in href means goes somewhere to the same page (bookmark ^^^link) -->
+
+            </nav>
+
+            <h1 class="bio">Naiyou's Bio</h1>
+            <header class="banner"><img class="me" src="../images/me.jpg" alt="naiyou banner"></header>
+            <main>
+            <p> Hi, my name is Naiyou Wang. I'm studying Industrial and Interaction design as my first major and information management and technology as the second major.</p>
+
+            <p>I'm really interested in <strong>UX design</strong>, so I'm focused on interaction and web development. I learned many programs such as photoshop, adobe illustrator, and figma. I feel all these tools help me get a direction of what I want to pursue.</p> 
+            
+            <p>Besides that, I also learned the <strong>research methods</strong> , as well as the way to communicate with others.</p>
+            
+            <h2>Personal information</h2>
+            <p>Outside of school, I'd like to go swimming and drawing for relax. Sometimes, I do play video games as well, which will direct me to another exciting world.</p> 
+            
+            <p>I believe life should be balanced with work and entertainment. </p>
+            
+            <h2>My Skills</h2>
+            <ul>
+                <li>Adobe photoshop</li>
+                <li>Adobe indesign</li>
+                <li>Adobe illustrator</li>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+            </ul>
+            </main>
+            <footer>        
+<hr>
+            <p id="content">&copy;2020<span class="motto">"It doesn't matter how slow you go, as long as you don't stop."</span></p>
+
+            
+            </footer>
+</body>
+</html>
