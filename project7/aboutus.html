@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="projectstyle.css">
+    <script>
+        function feedbackInfo () {
+            alert("Submission Successful!");
+        }
+        
+    </script>
+</head>
+<body>
+
+    <nav>
+        <a class="navlink1" href="index.html" tabindex="1">Home</a> <span>|</span>
+        <a class="navlink2" href="mobilegame.html" tabindex="2"> Mobile Games</a> <span>|</span>
+        <a class="navlink3" href="aboutus.html" tabindex="3"> About Us</a>
+        <label class="searchtab" for="search">GO</label>
+        <input type="text" id="search" placeholder="Search.." tabindex="4">
+        
+        <a id="skip" href="#lastone" tabindex="5">Skip to Content</a><br>
+    </nav>
+
+
+    <section class="story">
+        <div class="headerstory">
+             <h1>Our Story</h1><br>
+        </div>
+       
+        <h2>Hi, this is our and your game world. We, ultra-game world welcomes each of you guys to join us to start a new journey that you've never experienced before. We want to help anyone who is willing to explore the games in a better and more convenient way. We built our website based on the love of games and the desire of building a game community.</h2><br>
+
+        <h2>I know sometimes life can be hard and annoying, so our website can bring you to the game you wish to play and enjoy. We are working on our best abilities to bring more games and developers for collaboration and support of the communities.</h2><br>
+
+        <h2>We also want to hear from you about any suggestions and insights you want to give us. Please fill out the form below for your precious opinions.</h2>
+    </section>
+
+    <section class="userform">
+        <h1>Feedback Form</h1>
+        <form class="formsheet" method="post" action="#">
+
+            <!-- no space inside the for tag -->
+            <label for="fullname">Name:</label>
+            <input class="inputbox" type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="emailaddress">Eamil address:</label>
+            <input class="inputbox" type="email" id="emailaddress" name="emailaddress"><br><br>
+
+            <label for="age">Age:</label>
+            <input class="inputbox" type="number" id="age" name="age"><br><br>
+
+            <label for="gender">Gender:</label>
+
+            <select class="inputbox" name="gender" id="gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="X">X</option>
+            </select><br><br>
+
+            <label for="profession">Profession:</label>
+            <input class="inputbox" type="text" id="profession" name="profession"><br>
+
+            <p>How do you hear from us?</p>
+            <textarea class="inputbox" id="feedback" name="feedback"></textarea><br>
+
+            <p>Any suggestion of what you want to play?</p>
+            <textarea class="inputbox" id="feedback" name="feedback"></textarea><br><br>
+            
+            <input class="btn" type="submit" value="submit" onclick="feedbackInfo();">
+        </form>
+    </section>
+
+<footer>
+    <div class="row1">
+        <div class="link1">
+            <p>
+                <strong>Company</strong><br><br>
+                <a class="footerlink3" href="aboutus.html">About Us</a><br>
+                Locations<br>
+                Careers<br>
+                Collaboration
+            </p>
+        </div>
+
+        <div class="sitename"> <!-- first div is flexbox container -->
+            <h2><a href="index.html">Game Ultra</a></h2>
+            <p>Contact us: ultragame@gamil.com</p>
+        </div> 
+
+        <div class="link2">
+            <p>
+                <strong>Contact</strong><br><br>
+                Purchase<br>
+                Support Teams<br>
+                Community<br>
+                Website Feedback
+            </p>
+        </div>
+    </div>
+    
+    <div class="row2">
+
+            Follow us on: <a class="footerimg" href="https://www.facebook.com/" id="footer-social-facebook"><img src="../project/footer/square-facebook.svg" alt="facebook logo"></a>
+
+            <a class="footerimg" href="https://www.twitter.com/" id="footer-social-twitter"><img src="../project/footer/square-twitter.svg" alt="twitter logo"></a>
+
+            <a class="footerimg" href="https://www.instagram.com/" id="footer-social-instagram"><img src="../project/footer/square-instagram.svg" alt="instagram logo"></a>
+
+            <a class="footerimg" href="https://www.youtube.com/" id="footer-social-youtube"><img src="../project/footer/square-youtube.svg" alt="youtube logo"></a>
+
+            <a class="footerimg" href="https://www.linkedin.com/" id="footer-social-linkedin"><img src="../project/footer/linkedin.svg" alt="linkedin logo"></a>
+
+    </div>
+    <div class="row3">
+        &copy; 2020 All rights researved.
+    </div>
+</footer>
+</body>
+</html>

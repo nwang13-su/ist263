@@ -1,0 +1,253 @@
+/* navigation part */
+nav {
+    padding: 15px;
+    margin: 15px;
+}
+nav a {
+    color: black;
+    font-weight: 600;
+    font-size: large;
+}
+nav a:hover {
+    color: #e32929;
+}
+.navlink1, .navlink2, .navlink3 {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+nav input[type=text], .searchtab {
+    float: right;
+    padding: 8px;
+    border: none;
+    border-radius: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #191919;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size:medium;
+}
+#skip {
+    background-color: #e49d9d;
+    border: 1px solid black;
+    padding: 6px;
+    position: absolute; /* out of page flow for layout */
+    left: -999px;
+}
+#skip:focus {
+    left: 10px;
+    top: 60px;
+}
+
+/* header part */
+header {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    background-color: #FAD4D4;
+}
+.headertext {
+    margin: auto;
+    padding: 15px;
+    padding-right: 40px;
+    flex-basis: 50%;
+}
+.banner {
+    max-width: 90%;
+    flex-basis: 60%;
+    margin: auto;
+    border-radius: 1em;
+}
+.bannerimg {
+    text-align: center;
+    margin: auto;
+}
+.intro {
+    padding: 120px;            
+    margin:auto;
+    text-align: center;
+}
+
+/* main content */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color: #111619;
+    background-color: #FFF2F2;
+}
+p {
+    font-size:large;
+}
+img {
+    max-width: 100%;
+}
+.headline {
+    text-align: center;
+}
+.category {
+    display: flex;
+}
+.content, .gameintro {
+    padding: 40px;
+    margin: auto;
+}
+.btn {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: medium;
+    border: 2px solid #594545;
+    border-radius: 5px;
+    background-color: #FFEBCC ;
+    padding: 8px;
+    margin: auto;    width: 40%;
+    transition-duration: 0.4s;
+}
+.btn:hover {
+    color: #ce1e4a;
+    background-color:#fef5e7;
+    font-weight: bold;
+    border: 2px solid #9b7474;
+}
+.lolhome, .crhome, .wdhome {
+    padding: 20px;
+    margin: auto;
+}
+.pubghome, .zeldahome {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+}
+.gameintro {
+    padding: 20px;
+}
+.gamepic {
+    margin: auto;
+}
+.mobileimg, .gamevideo {
+    width: 560px;
+}
+.gamevideo {
+    height: 315px;
+}
+.story {
+    padding: 120px;
+    text-align: center;
+}
+.headerstory {
+    font-weight: 600;
+    font-size: xx-large;
+}
+.userform {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-left: 300px;
+    padding-right: 300px;
+
+}
+.userform .btn {width: 120px;}
+form {    
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color:#fdaeae
+}
+.inputbox {
+    background-color: #FFEBCC ;
+    padding: 6px; 
+    margin: 10px;
+}
+
+/* footer part */
+footer {
+    background-color: #FAD4D4;
+    padding: 20px;
+}
+footer a {
+    color: black;
+}
+footer a:hover {
+    color: #cb3f6e;
+}
+.row1, .row2 {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+.link1, .link2 {
+    padding: 12px;
+    margin-left: 40px;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.sitename {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    flex-basis: 20%;
+}
+.row3 {
+    text-align: center;
+}
+.footerimg {
+    width: 2%;
+    padding-right: 5px;
+}
+
+
+/* responsive design */
+@media only screen and (max-width: 962px) {
+    span {display: none;}
+    nav a {width: 100%; margin-bottom: 16px; display: block;}
+    header {flex-wrap: wrap;}
+    .headertext {flex-basis: 85%;}
+    .lolhome, .crhome, .wdhome, .pubghome, .zeldahome {flex-basis: 75%;}
+    .gameintro {text-align: center;}
+    .category {
+        flex-wrap: wrap;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 80px;
+    }
+    .content {flex: 1;}
+    .gamepic {
+        text-align: center;
+    }
+    .mobileimg, .gamevideo {
+        width: 350px;
+    }
+    .gamevideo {
+        height: 196px;
+    }
+    .story {
+        padding: 40px;
+        
+    }
+    .userform {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: large;
+        text-align: center;
+        padding-bottom: 80px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .row1 {flex-wrap: wrap;}
+    .link1, .link2, .sitename {flex-basis: 50%;}
+    .link1, .link2 {margin-left: 0px;}
+    .footerimg {
+        width: 5%;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (min-width: 962px) {
+    header {flex-wrap: nowrap;}
+    .headertext {flex-basis: 45%;}
+    .lolhome, .crhome, .wdhome {flex-basis: 34%;}
+    .pubghome, .zeldahome {flex-basis: 26%;}
+    .category {
+        flex-wrap: nowrap;
+        margin-left: 80px;
+        margin-right: 80px;
+        padding-bottom: 120px;
+    }
+    .content {flex-basis: 50%;}
+}
