@@ -99,7 +99,7 @@ img {
     margin: auto;    width: 40%;
     transition-duration: 0.4s;
 }
-.btn:hover {
+.btn:hover, .ratebtn:hover {
     color: #ce1e4a;
     background-color:#fef5e7;
     font-weight: bold;
