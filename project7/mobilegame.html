@@ -6,6 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Games</title>
     <link rel="stylesheet" href="projectstyle.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;500;800&family=Kavoon&family=Signika+Negative&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#rate1").click(function(){
+        $("#star1").fadeIn();
+        $("#star2").fadeIn("slow");
+        $("#star3").fadeIn(3000);
+        $("#star4").fadeIn(4000);
+        $("#star5").fadeIn(5000);
+
+    });
+    });
+    $(document).ready(function(){
+    $("#rate2").click(function(){
+        $("#star11").fadeIn();
+        $("#star12").fadeIn("slow");
+        $("#star13").fadeIn(3000);
+        $("#star14").fadeIn(4000);
+        $("#star15").fadeIn(5000);
+
+    });
+    });
+    $(document).ready(function(){
+    $("#rate3").click(function(){
+        $("#star21").fadeIn();
+        $("#star22").fadeIn("slow");
+        $("#star23").fadeIn(3000);
+        $("#star24").fadeIn(4000);
+        $("#star25").fadeIn(5000);
+
+    });
+    });
+    </script>
+
 </head>
 <body>
 
@@ -32,7 +69,12 @@
             <div class="gameintro">
                 <h3>Call of duty</h3>
                 <p>A free-to-play shooter game developed by TiMi Studio Group and published by Activision for Android and iOS. It was released on October 1, 2019.</p> 
-                <p>Rating: four stars</p>
+                <button id="rate1" class="ratebtn">Click to see Rating</button> 
+                <img id="star1" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star2" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star3" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star4" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star5" class="starimg" src="../project/images/star-regular.svg" alt="regular star">
                 <p>Comments: TiMi Studio Group currently works on many games that they don't have time to invest on Call of duty deeply.</p>
                 <input class="btn" type="submit" value="Learn More"><br><br>
             </div>
@@ -45,7 +87,12 @@
             <div class="gameintro">
                 <h3>Pokemon GO</h3>
                 <p>Pokémon Go is a 2016 augmented reality mobile game, part of the Pokémon franchise, developed and published by Niantic in collaboration with Nintendo and The Pokémon Company for iOS and Android devices.</p>
-                <p>Rating: five stars</p>
+                <button id="rate2" class="ratebtn">Click to see Rating</button> 
+                <img id="star11" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star12" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star13" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star14" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star15" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
                 <p>Comments: Pokemon Go has its uniqueness that connects deeply with the Japanese animation which makes it more popular around the world. With its cute character design, many younger generations who watch animations a lot like this game very much.</p>
                 <input class="btn" type="submit" value="Learn More"><br><br>
             </div>
@@ -70,7 +117,12 @@
             <div class="gameintro">
                 <h3>Genshin Impact</h3>
                 <p>Genshin Impact is an action role-playing game developed and published by miHoYo. It was released for Microsoft Windows, PlayStation 4, iOS, and Android in 2020, and on PlayStation 5 in 2021, and is set for release on Nintendo Switch.</p>
-                <p>Rating: five stars</p>
+                <button id="rate3" class="ratebtn">Click to see Rating</button> 
+                <img id="star21" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star22" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star23" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star24" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
+                <img id="star25" class="starimg" src="../project/images/star-solid.svg" alt="solid star">
                 <p>Comments: Genshin Impact has its flexibility since it can be played on mobile, PC, as well as console, making it very popular these days. The storytelling during the game is really impressive and attractive for people around the world. </p>
                 <input class="btn" type="submit" value="Learn More"><br><br>
             </div>
