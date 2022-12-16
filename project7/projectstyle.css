@@ -216,7 +216,11 @@ footer a:hover {
     span {display: none;}
     nav a {width: 100%; margin-bottom: 16px; display: block;}
     header {flex-wrap: wrap;}
-    .headertext {flex-basis: 85%;}
+    .headertext {
+        padding-right: 0px;
+        flex-basis: 90%;
+    }
+    .intro {padding: 40px;}
     .lolhome, .crhome, .wdhome, .pubghome, .zeldahome {flex-basis: 75%;}
     .gameintro {text-align: center;}
     .category {
