@@ -125,6 +125,7 @@ img {
 }
 .gamevideo {
     height: 315px;
+    border: 0px;
 }
 .ratebtn {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
